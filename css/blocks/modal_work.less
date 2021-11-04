@@ -1,0 +1,84 @@
+// main: ../style.less
+
+.modal_work {
+    display: flex;
+}
+
+.modal_work-preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+
+}
+.modal_work-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0) ;
+}
+
+.modal_work-content {
+    width: 35%;
+    padding: 3.4rem 6.6rem 1rem 1.73rem;
+    position: relative;
+
+}
+
+.modal_work-header {
+    margin-bottom: 2.2rem;
+}
+
+.modal_work-title {
+    margin-bottom: 0.2rem;
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.maodal_work-info {
+    font-size: 1.2rem;
+    color: @gray;
+    text-transform: uppercase;
+}
+
+.modal_work-client {
+    margin-bottom: 2.2rem;
+}
+
+.modal_work-client-title {
+    margin-bottom: 0.2rem;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal_work-client-company {
+    font-size: 0.94rem;
+    font-style: italic;
+    color: @gray;
+
+}
+
+.modal_work-text {
+    margin-bottom: 8.65rem;
+    font-size: 0.8rem;
+    color: @gray;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.modal_work-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem 1rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+}

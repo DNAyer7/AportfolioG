@@ -1,0 +1,98 @@
+// main: ../style.less
+
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem; 
+    overflow: auto;
+    background-color: rgb(6 15 42 / 90%);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    &.show {
+        display: flex;
+
+        
+    }
+
+}
+
+.modal_dialog {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+   
+    background-color: #fff;
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
+
+    &--sm {
+    width: 900px;
+    }
+}
+
+
+
+.modal-close {
+    width: 34px;
+    height: 39px;
+    padding: 0;
+    background: none;
+    border:0;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0.9rem;
+    right: 0.9rem;
+    z-index: 1;
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+}
+
+.modal_work-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_work-btn {
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.94rem;
+    color: @black;
+    text-transform: uppercase;
+}
+
+
+.modal_content {
+    padding: 5rem 1rem;
+}
+
+.modal_title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal_subtitle {
+    text-transform: uppercase;
+    font-size: 1.0106rem;
+    color: @black;
+    font-weight: 400;
+
+}
